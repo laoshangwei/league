@@ -26,17 +26,18 @@
 
 .game-content .game-ul li.match {
     width: 74.3%;
-    height: 69px;
+    height: 69.2px;
 }
 
 .game-content .game-ul li.tv-god {
     float: right;
-    width: 49.3%;
-    height: 140px;
+    width: 49%;
+    height: 140.2px;
+    margin-right: 2px;
 }
 
 .game-content .game-ul li.god-fight {
-    width: 49.5%;
+    width: 49.6%;
 }
 
 .game-content .game-ul li.tv-god .tab-link i {
