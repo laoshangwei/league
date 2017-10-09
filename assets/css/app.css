@@ -1,0 +1,30 @@
+.views .view-main .navbar {
+    background: linear-gradient(rgba(57, 44, 44, 0.58), rgba(223, 204, 204, 0.11));
+}
+
+.views .view-main .toolbar {
+    background: rgba(26, 18, 18, 0.8)
+}
+
+.views .view-main .navbar::after {
+    height: 0;
+}
+
+.views .view-main .page .page-content {
+    padding-top: 0;
+    background: url('../img/backgroud.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.views .view-main .page .page-content .swiper-content .swiper-container {
+    height: 215px;
+}
+
+.view-main .page .page-content .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 100%;
+}
+
+.views .toolbar .toolbar-inner .tab-link {
+    color: #2ff6d7;
+}

@@ -1,0 +1,117 @@
+.game-content {
+    margin-top: -4px;
+    background: rgba(0, 0, 0, 0.57);
+}
+
+.game-content .game-title {
+    color: #fff;
+}
+
+.game-content .game-ul {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.game-content .game-ul li {
+    width: 24.5%;
+    float: left;
+    margin: 1px;
+}
+
+.game-content .game-ul li.match {
+    width: 74.3%;
+    height: 69px;
+}
+
+.game-content .game-ul li.tv-god {
+    float: right;
+    width: 49.3%;
+    height: 140px;
+}
+
+.game-content .game-ul li.god-fight {
+    width: 49.5%;
+}
+
+.game-content .game-ul li.tv-god .tab-link i {
+    padding-top: 24px;
+}
+
+.game-content .game-ul li .tab-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #4284ca;
+    text-align: center;
+}
+
+.game-content .game-ul li .tab-link i {
+    font-size: 32px;
+    line-height: 50px;
+    display: block;
+    height: 50px;
+}
+
+.match .match-date {
+    padding-top: 13px;
+}
+
+.match .match-date p {
+    margin: 0px;
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+.match .match-team .team-home {
+    float: left;
+}
+
+.match .match-team .team-away {
+    float: right;
+}
+
+.match .match-team .team-home img {
+    position: absolute;
+    top: 12px;
+    margin-left: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+.match .match-team .team-away img {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+.game-consult {
+    height: 28%;
+    overflow-x: scroll;
+    background: rgba(23, 15, 29, 0.67)
+}
+
+.game-consult ul {
+    margin: 0 15px;
+    padding: 0px;
+    line-height: 22px;
+    list-style: none;
+}
+
+.game-consult ul li a {
+    color: #4284ca;
+}
+
+.game-consult ul li span {
+    float: right;
+    color: #8a9aa9;
+}
