@@ -87,6 +87,15 @@ var app = new Framework7({
                 return true;
             }
         });
+        app.addView('#view-game-data', {
+            dynamicNavbar: true,
+            swipeBackPage: true,
+            domCache: true,
+            preroute: function (view, options) {
+                app.params.templatepages = false;
+                return true;
+            }
+        });
     };
 
 

@@ -2,7 +2,7 @@
     var that = {
         name: "game-data",
         url: 'page/game-data/index.html',
-        toolbar: 'toolbar-game-data',
+        toolbar: '.toolbar-game-data',
         view: app.views[name]
     };
 
@@ -15,7 +15,7 @@
             });
         });
 
-        $$(document).on('click', '.link-home[href="#game-data"]', function () {
+        $$(document).on('click', '[href="#game-data"]', function () {
             location.reload();
         });
     }
