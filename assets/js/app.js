@@ -78,16 +78,17 @@ var app = new Framework7({
     });
 
     app.initView = () => {
-        app.addView('#view-main', {
-            dynamicNavbar: true,
-            swipeBackPage: true,
-            domCache: true,
-            preroute: (view, options) => {
-                app.params.templatePages = false;
-                return true;
-            }
-        });
-        app.addView('#view-game-data', {
+        var views = app.api ? ['data'] : ['home', 'data'];
+        if (app.api) {
+            $$('#view-home').removeClass('view-main active');
+            $$('#view-data').addClass('view-main active');
+        } else {
+            app.addView('#view-home', {
+                dynamicNavbar: true,
+                swipeBackPage: true,
+            });
+        }
+        app.addView('#view-data', {
             dynamicNavbar: true,
             swipeBackPage: true,
             domCache: true,
@@ -96,7 +97,18 @@ var app = new Framework7({
                 return true;
             }
         });
+        views.forEach((item, i) => {
+            app.views[views[i]] = app.views[i];
+        });
     };
+
+    app.initHome = () => {
+        app.mainView.loadPage({
+            url: 'home.html',
+            animatePages: false,
+            reload: app.api
+        });
+    }
 
 
     app.initSwiper = (swiperName, direction, speed, autoplay, watchSlidesVisibility, height) => {
@@ -124,6 +136,12 @@ var app = new Framework7({
             app.pullToRefreshDone();
         });
 
+        $$('#view-main .view').on('show', e => {
+            var isViewData = this.id === 'view-data';
+            app.mainView - isViewData ? app.views.data : app.views.home;
+            app.params.swipePanel = isViewData ? '' : 'right';
+        });
+
         $$(document).on('pageInit', e => {
             var page = e.detail.page;
             if (page.view !== undefined) {
@@ -146,6 +164,7 @@ var app = new Framework7({
     app.initSwiper('.swiper-container');
     app.initSwiper('.swiper-consult', 'vertical', '600', '2000', true, 220);
     app.initView();
+    app.initHome();
     app.initEvent();
 })();
 
