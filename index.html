@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/framework7.ios.colors.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/game-data/default.css">
 </head>
 
 <body>
@@ -58,7 +59,31 @@
             <div class="navbar"></div>
             <div class="pages navbar-through toolbar-through"> </div>
 
-            <div class="toolbar tabbar tabbar-labels" id="toolbar-data"> </div>
+            <div class="toolbar tabbar tabbar-labels" id="toolbar-data">
+                <div class="toolbar-inner">
+                    <a href="home.html" class="tab-link active">
+                        <i class="f7-icons">bars</i>
+                        <span class="tabbar-label">英雄</span>
+                    </a>
+                    <a href="#tab2" class="tab-link">
+                        <i class="f7-icons">tape</i>
+                        <span class="tabbar-label">物品</span>
+                    </a>
+                    <a href="#tab3" class="tab-link">
+                        <i class="f7-icons">data</i>
+                        <span class="tabbar-label">召唤师技能</span>
+                    </a>
+                    <a href="#tab4" class="tab-link">
+                        <i class="f7-icons">flag</i>
+                        <span class="tabbar-label">符文</span>
+                    </a>
+                    <a href="#tab5" class="tab-link">
+                        <i class="f7-icons">settings</i>
+                        <span class="tabbar-label">天赋</span>
+                    </a>
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -66,6 +91,7 @@
 <script src="assets/js/framework7.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/app.main.js"></script>
+<script src="assets/js/game-data/champion.js"></script>
 <script src="assets/js/game-data/index.js"></script>
 
 </html>
