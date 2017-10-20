@@ -60,15 +60,14 @@ var app = new Framework7({
         });
     }
 
-    app.templates.get = name => {
+    app.templates.get = function (name) {
         var id = 'temp-' + name;
         return this[id] || app.templates.set(id, $$('#' + id).html());
-    }
-
-    app.templates.set = (name, value) => {
+    };
+    app.templates.set = function (name, value) {
         var temp = this[name] = value;
         return temp;
-    }
+    };
 
     app.timer = Object.create(Object.prototype, {
         'clear': {

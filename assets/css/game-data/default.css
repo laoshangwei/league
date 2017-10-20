@@ -6,33 +6,15 @@
     height: 0;
 }
 
+.views .view-data .toolbar {
+    background: rgba(26, 18, 18, 0.8);
+}
+
 .views .view-data .page .page-content {
     padding-top: 0px;
     background: url('../../img/backgroud.jpg') center no-repeat;
 }
 
-.hero-content .hero-title {
-    padding-left: 5px;
-    color: #fff;
-}
-
-.hero-content .hero-ul {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    list-style: none;
-    padding: 0;
-}
-
-.hero-content .hero-ul li {
-    width: 16.1%;
-    height: 100%;
-    float: left;
-    margin: 0 1px;
-    background: rgba(76, 68, 70, 0.93);
-    text-align: center;
-}
-
-.hero-content .hero-ul li a img {
-    width: 100%;
+.fiex {
+    display: flex;
 }

@@ -15,26 +15,61 @@
             </div>
         </div>
     </div>
-</div>
-<div class="page-template">
-    <script type="text/template" id="temp-swiper">
-        <div class="hero-{0} swiper-{0}">
-            <div class="swiper-wrapper">{1}</div>
+    <div class="page-template">
+        <script type="text/template" id="temp-swiper">
+            <div class="hero-{0} swiper-{0}">
+                <div class="swiper-wrapper">{1}</div>
+                <div class="swiper-pagination"></div>
+                <div class="hero-info">
+                    <h6 class="hero-nickname">{2}</h6>
+                    <h3 class="hero-name">{3}</h3>
+                    <div class="hero-combat-type">
+                        {4}
+                    </div>
+                    <div class="hero-attr">
+                        <div class="ad fiex">
+                            <div class="name width-40">物理攻击</div>
+                            <div class="centum width-55">
+                                <i class="attack-{5}" style="backgroud:#F2C500;"></i>
+                            </div>
+                        </div>
+                        <div class="ap fiex">
+                            <div class="name width-40">魔法攻击</div>
+                            <div class="centum width-55">
+                                <i class="defense-{6}" style="backgroud:#F59D00;"></i>
+                            </div>
+                        </div>
+                        <div class="defend fiex">
+                            <div class="name width-40">防御能力</div>
+                            <div class="centum width-55">
+                                <i class="difficulty-{7}" style="backgroud:#F59D00;"></i>
+                            </div>
+                        </div>
+                        <div class="easy fiex">
+                            <div class="name width-40">上手难度</div>
+                            <div class="centum width-55">
+                                <i class="magic-{8}" style="backgroud:#1ECA6B"></i>
+                            </div>
+                        </div>
+    
+                        <div class="hero-more">
+                            <a href="#">更多详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
 
-            <div class="swiper-pagination"></div>
-        </div>
-    </script>
+        <script type="text/template" id="temp-skin">
+            <div class="swiper-slide">
+                <img src="{0}" alt="">
+            </div>
+        </script>
 
-    <script type="text/template" id="temp-swiper-child">
-        <div class="swiper-slide">
-            <img src="{0}" alt="">
-        </div>
-    </script>
-
-    <script type="text/template" id="temp-hero">
-        <li class="hero-{0}" data-type="{1}">
-            <a herf="{2}"></a>
-            <span>{4}</span>
-        </li>
-    </script>
+        <script type="text/template" id="temp-hero">
+            <li class="hero-{0}" data-type="{1}">
+                <a herf="{2}"><img src="{3}"> <span>{4}</span></a>
+            </li>
+        </script>
+    </div>
 </div>

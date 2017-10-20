@@ -26,5 +26,14 @@ app.main = (() => {
         }
         setTimeout(start, delay);
     }
+
+    that.loadScript = function (url, callback) {
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        head.appendChild(script);
+        if (callback) callback();
+    }
     return that;
 })();

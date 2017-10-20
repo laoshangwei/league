@@ -1,5 +1,4 @@
-app.data = {};
-app.data.hero = {
+app.hero.params.hero = {
     "keys": {
         "1": "Annie",
         "2": "Olaf",
