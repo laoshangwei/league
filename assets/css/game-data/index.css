@@ -73,12 +73,10 @@
     height: 100%;
 }
 
-.content-block,
 .hero-content {
+    margin-top: 13px;
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: 70%;
 }
 
 .hero-content .hero-title {
@@ -89,16 +87,17 @@
 .hero-content .hero-list {
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin-top: -19px;
     list-style: none;
     padding: 0;
+    overflow: scroll;
 }
 
 .hero-content .hero-list li {
     width: 16.1%;
-    height: 88px;
+    height: 87px;
     float: left;
-    margin: 0 1px;
+    margin: 1px;
     background: rgba(76, 68, 70, 0.93);
     text-align: center;
 }
@@ -113,7 +112,13 @@
     width: 100%;
 }
 
-.hero-content .hero-list li a span {}
+.hero-content .hero-list li a span {
+    display: block;
+    width: 4rem;
+    font-size: 13px;
+    height: 1rem;
+    overflow: auto;
+}
 
 .hero-info {
     position: absolute;

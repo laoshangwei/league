@@ -1,23 +1,25 @@
 <div class="navbar-inner">
-    <div class="left"></div>
+    <div class="left">
+        <a href="#" class="back link">
+            <i class="icon icon-back"></i>
+        </a>
+    </div>
     <div class="center sliding color-white">英雄</div>
     <div class="right"></div>
 </div>
 
 <div class="page page-data" data-page="data">
     <div class="page-content">
-        <div class="content-block">
-            <div class="swiper"></div>
-            <div class="hero-content">
-                <ul class="hero-list">
+        <div class="swiper"></div>
+        <div class="hero-content">
+            <ul class="hero-list">
 
-                </ul>
-            </div>
+            </ul>
         </div>
     </div>
     <div class="page-template">
         <script type="text/template" id="temp-swiper">
-            <div class="hero-{0} swiper-{0}">
+            <div class="swiper-{0}">
                 <div class="swiper-wrapper">{1}</div>
                 <div class="swiper-pagination"></div>
                 <div class="hero-info">
@@ -67,7 +69,7 @@
         </script>
 
         <script type="text/template" id="temp-hero">
-            <li class="hero-{0}" data-type="{1}">
+            <li class="swipeout hero-{0}" data-type="{1}">
                 <a herf="{2}"><img src="{3}"> <span>{4}</span></a>
             </li>
         </script>

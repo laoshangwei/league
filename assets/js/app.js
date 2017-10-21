@@ -125,7 +125,6 @@ var app = new Framework7({
         app.swiper(swiperName, app.swiperOption);
     };
     app.initEvent = () => {
-
         $$(document).on('ajaxStart', e => {
             var xhr = e.detail.xhr;
         });
@@ -149,7 +148,9 @@ var app = new Framework7({
                 view.find('.toolbar a.toolbar-' + page.view.activePage.name).addClass('active');
             }
 
-            if (page.name === 'main') app.initSwiper();
+            if (page.name === 'home') {
+                app.initSwiper('.swiper-container');
+            }
         });
 
         $$(document).on('pageAfterBack', e => {
@@ -160,8 +161,6 @@ var app = new Framework7({
         });
     }
 
-    app.initSwiper('.swiper-container');
-    app.initSwiper('.swiper-consult', 'vertical', '600', '2000', true, 220);
     app.initView();
     app.initHome();
     app.initEvent();
