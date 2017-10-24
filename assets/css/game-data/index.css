@@ -161,8 +161,9 @@
     padding: 0;
     list-style: none;
     width: 9rem;
-    height: 6.5rem;
-    line-height: 26px;
+    height: 5.5rem;
+    line-height: 23px;
+    font-weight: 300;
 }
 
 .hero-info .hero-attr .name {
@@ -175,7 +176,6 @@
     border: 1px solid;
     height: 15px;
     padding-top: 0px;
-    margin-top: 5px;
 }
 
 .hero-info .hero-attr .centum i {
@@ -191,6 +191,9 @@
     background: darkmagenta;
     text-align: center;
     border-radius: 2px;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 100;
 }
 
 .hero-info .hero-more a {

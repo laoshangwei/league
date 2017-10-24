@@ -61,6 +61,10 @@
                 reload: true
             });
         });
+
+        $$(document).on('click', '.link-home', function () {
+            window.location.reload();
+        });
     }
 
     app.onPageInit(that.name, function (page) {
