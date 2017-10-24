@@ -1,16 +1,16 @@
-.views .view-data .navbar {
+.views .view-hero .navbar {
     background: linear-gradient(rgba(57, 44, 44, 0.58), rgba(223, 204, 204, 0.11));
 }
 
-.views .view-data .navbar::after {
+.views .view-hero .navbar::after {
     height: 0;
 }
 
-.views .view-data .toolbar {
+.views .view-hero .toolbar {
     background: rgba(26, 18, 18, 0.8);
 }
 
-.views .view-data .page .page-content {
+.views .view-hero .page .page-content {
     padding-top: 0px;
     background: url('../../img/backgroud.jpg') center no-repeat;
 }

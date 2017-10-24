@@ -1,4 +1,4 @@
-app.hero.params.hero = {
+app.hero.params = {
     "keys": {
         "1": "Annie",
         "2": "Olaf",
@@ -139,6 +139,7 @@ app.hero.params.hero = {
         "498": "Xayah",
         "516": "Ornn",
     },
+
     "data": {
         "Aatrox": {
             "id": "Aatrox",

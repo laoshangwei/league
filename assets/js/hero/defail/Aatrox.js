@@ -1,4 +1,4 @@
-app.hero.params.hero.data.Aatrox = {
+app.hero.params.defailData.Aatrox = {
     "data": {
         "id": "Aatrox",
         "key": "266",
