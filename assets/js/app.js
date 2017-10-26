@@ -76,7 +76,7 @@ var app = new Framework7({
     });
 
     app.initView = () => {
-        var views = app.api ? ['hero'] : ['home', 'hero'];
+        var views = app.api ? ['hero'] : ['home', 'hero', 'defail'];
         if (app.api) {
             $$('#view-home').removeClass('view-main active');
             $$('#view-hero').addClass('view-main active');
@@ -87,6 +87,15 @@ var app = new Framework7({
             });
         }
         app.addView('#view-hero', {
+            dynamicNavbar: true,
+            swipeBackPage: true,
+            domCache: true,
+            preroute: function (view, options) {
+                app.params.templatepages = false;
+                return true;
+            }
+        });
+        app.addView('#view-defail', {
             dynamicNavbar: true,
             swipeBackPage: true,
             domCache: true,

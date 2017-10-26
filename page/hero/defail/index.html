@@ -5,17 +5,56 @@
                 <i class="icon ion-ios-arrow left"></i>
             </a>
         </div>
-    </div>
 
-    <div class="center sliding" id="live-hero-title">暗裔剑魔</div>
+        <div class="center sliding" id="live-hero-title">暗裔剑魔</div>
+    </div>
 </div>
 
-<div class="page page-hero-defail" data-page="hero-defail" id="page-herodefail">
+<div class="page page-defail" data-page="defail" id="page-defail">
     <div class="page-content">
-        <div class="panel-video">
-            <video class="video-js vjs-default-skin" id="hero-video">
-                <source src="video/oceans.mp4">
-            </video>
+        <div class="panel-video"> </div>
+        <div class="skill">
+            <div class="title">技能介绍</div>
+            <div class="skill-icon"> </div>
+            <div class="skill-data"></div>
         </div>
+        <div class="equip">
+            <div class="buttons-row">
+                <a href="#xiagu" class="button tab-link active">召唤师峡谷</a>
+                <a href="#luandou" class="button tab-link">极地大乱斗</a>
+            </div>
+
+            <div class="tabs-swipeable-wrap">
+                <div class="tabs">
+                    <div id="xiagu" class="tab active"></div>
+                    <div id="luandou" class="tab"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-template">
+            <script type="text/template" id="temp-video">
+                <video class="video-js vjs-default-skin hero-video" controls perboad="auto" id="{0}-video">
+                    <source src="{1}" type="{2}">
+                </video>
+            </script>
+
+            <script type="text/template" id="temp-skill">
+                <div class="skill-{0}"><img src={1}></div>
+            </script>
+
+            <script type="text/template" id="temp-skill-data">
+                <div class="title">{0}</div>
+                <div class="info">{1}</div>
+            </script>
+
+            <script type="text/template" id="temp-equip">
+                <div class="equip-type">
+                    <p class="name">{0}</p>
+                    <ul class="info">{1}</ul> 
+                </div>
+            </script>
+        </div>
+
     </div>
+
 </div>

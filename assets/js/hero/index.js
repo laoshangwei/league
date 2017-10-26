@@ -39,7 +39,7 @@
 
         heroData.tags.forEach(type => types += `<span>${params.heroType[type]}</span>`);
 
-        return temp.format(heroData.id, skinContent, nickName, heroData.title, types, heroData.info.attack, heroData.info.defense, heroData.info.difficulty, heroData.info.magic);
+        return temp.format(heroData.id, skinContent, nickName, heroData.title, types, heroData.info.attack, heroData.info.defense, heroData.info.difficulty, heroData.info.magic, heroData.id);
     }
 
     that.formatData = function (heroInfo) {

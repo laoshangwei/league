@@ -1,59 +1,1362 @@
-<div class="page-template">
-    <script type="text/template" id="temp-swiper">
-        <div class="hero-{0} swiper-{0}">
-            <div class="swiper-wrapper">{1}</div>
-            <div class="swiper-pagination"></div>
-            <div class="hero-info">
-                <h6 class="hero-nickname">暗裔剑魔</h6>
-                <h3 class="hero-name">亚托克斯</h3>
-                <div class="hero-combat-type">
-                    <span>战斗</span>
-                    <span>坦克</span>
-                </div>
-                <div class="hero-attr">
-                    <div class="ad fiex">
-                        <div class="name width-40">物理攻击</div>
-                        <div class="centum width-55">
-                            <i></i>
-                        </div>
-                    </div>
-                    <div class="ap fiex">
-                        <div class="name width-40">魔法攻击</div>
-                        <div class="centum width-55">
-                            <i></i>
-                        </div>
-                    </div>
-                    <div class="defend fiex">
-                        <div class="name width-40">防御能力</div>
-                        <div class="centum width-55">
-                            <i></i>
-                        </div>
-                    </div>
-                    <div class="easy fiex">
-                        <div class="name width-40">上手难度</div>
-                        <div class="centum width-55">
-                            <i></i>
-                        </div>
-                    </div>
+<body class="framework7-root">
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
 
-                    <div class="hero-more">
-                        <a href="#">更多详情</a>
+    <div class="panel panel-left panel-reveal layout-white">
+        <div class="view view-left"></div>
+    </div>
+    <div class="panel panel-right panel-reveal panel-primary">
+        <div class="view view-right"></div>
+    </div>
+    <div class="views tabs toolbar-through" id="view-main">
+        <div class="view tab view-home view-main" id="view-home" data-page="home">
+            <div class="navbar">
+                <div class="navbar-inner navbar-on-center">
+                    <div class="left"></div>
+                    <div class="center sliding color-white" style="left: 0px; transform: translate3d(0px, 0px, 0px);">OLO</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="pages navbar-through toolbar-through">
+                <div class="page page-home page-on-center" data-page="home">
+                    <div class="page-content">
+                        <div class="swiper-container swiper-container-horizontal">
+                            <div class="swiper-wrapper" style="transform: translate3d(-750px, 0px, 0px); transition-duration: 600ms;">
+                                <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 375px;">
+                                    <img src="assets/img/swiper5.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 375px;">
+                                    <img src="assets/img/swiper1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 375px;">
+                                    <img src="assets/img/swiper2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 375px;">
+                                    <img src="assets/img/swiper3.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="3" style="width: 375px;">
+                                    <img src="assets/img/swiper4.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide" data-swiper-slide-index="4" style="width: 375px;">
+                                    <img src="assets/img/swiper5.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 375px;">
+                                    <img src="assets/img/swiper1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                <span class="swiper-pagination-bullet"></span>
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                                <span class="swiper-pagination-bullet"></span>
+                                <span class="swiper-pagination-bullet"></span>
+                                <span class="swiper-pagination-bullet"></span>
+                            </div>
+                        </div>
+
+                        <div class="game-content">
+                            <div class="game-title">功能特色</div>
+                            <ul class="game-ul">
+                                <li>
+                                    <a href="#" class="tab-link">
+                                        <i class="f7-icons">star_half</i>
+                                        <span class="tabbar-label">职业联赛</span>
+                                    </a>
+                                </li>
+                                <li class="match">
+                                    <a href="#" class="tab-link">
+                                        <div class="match-date">
+                                            <p class="match-time">10-05 15:00</p>
+                                            <p class="match-status">未开始</p>
+                                        </div>
+                                        <div class="match-team">
+                                            <div class="team-home">
+                                                <img src="assets/img/team/edg.png" alt="">
+                                            </div>
+                                            <div class="team-away">
+                                                <img src="assets/img/team/omg.png" alt="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page/hero/defail/index.html" class="tab-link">
+                                        <i class="f7-icons">search_strong</i>
+                                        <span class="tabbar-label">战绩查询</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#view-hero" class="tab-link toolbar-hero active" id="link-hero">
+                                        <i class="f7-icons">eye</i>
+                                        <span class="tabbar-hero">游戏资料</span>
+                                    </a>
+                                </li>
+                                <li class="tv-god">
+                                    <a href="" class="tab-link">
+                                        <i class="f7-icons">film</i>
+                                        <span class="tabbar-label">大神直播</span>
+                                    </a>
+                                </li>
+                                <li class="god-fight">
+                                    <a href="" class="tab-link">
+                                        <i class="f7-icons">graph_square</i>
+                                        <span class="tabbar-label">神仙打架</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-100 game-consult" id="game-consult">
+                            <ul>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                                <li>
+                                    <a href="#">厂长：第一打野让给你们，冠军梦却不能！</a>
+                                    <span class="date-time">一天前</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </script>
+            <div class="toolbar tabbar tabbar-labels">
+                <div class="toolbar-inner">
+                    <a href="home.html" class="tab-link">
+                        <i class="f7-icons">bars</i>
+                        <span class="tabbar-label">主页</span>
+                    </a>
+                    <a href="#tab2" class="tab-link">
+                        <i class="f7-icons">tape</i>
+                        <span class="tabbar-label">关注</span>
+                    </a>
+                    <a href="#tab3" class="tab-link">
+                        <i class="f7-icons">data</i>
+                        <span class="tabbar-label">内容</span>
+                    </a>
+                    <a href="#tab4" class="tab-link">
+                        <i class="f7-icons">flag</i>
+                        <span class="tabbar-label">国家</span>
+                    </a>
+                    <a href="#tab5" class="tab-link">
+                        <i class="f7-icons">settings</i>
+                        <span class="tabbar-label">设置</span>
+                    </a>
 
-    <script type="text/template" id="temp-skin">
-        <div class="swiper-slide">
-            <img src="{0}" alt="">
+                </div>
+            </div>
         </div>
-    </script>
+        <div class="view tab view-hero active" id="view-hero" data-page="defail">
+            <div class="navbar">
+                <div class="navbar-inner navbar-on-left">
+                    <div class="left">
+                        <a href="#" class="back link link-home">
+                            <i class="icon icon-back"></i>
+                        </a>
+                    </div>
+                    <div class="center sliding color-white" style="left: -6px; transform: translate3d(-162.5px, 0px, 0px);">英雄</div>
+                    <div class="right"></div>
+                </div>
+                <div class="navbar-inner navbar-on-center">
+                    <div class="left sliding" style="transform: translate3d(0px, 0px, 0px);">
+                        <a href="#" class="back link">
+                            <i class="icon ion-ios-arrow left"></i>
+                        </a>
+                    </div>
 
-    <script type="text/template" id="temp-hero">
-        <li class="hero-{0}" data-type="{1}">
-            <a herf="{2}"><img src="{3}"></a>
-            <span>{4}</span>
-        </li>
-    </script>
-</div>
+                    <div class="center sliding" id="live-hero-title" style="left: -145.5px; transform: translate3d(0px, 0px, 0px);">暗裔剑魔</div>
+                </div>
+            </div>
+            <div class="pages navbar-through toolbar-through">
+                <div class="page page-hero page-on-left" data-page="hero">
+                    <div class="page-content">
+                        <div class="swiper">
+                            <div class="swiper-Aatrox swiper-container-horizontal">
+                                <div class="swiper-wrapper" style="transform: translate3d(-1500px, 0px, 0px); transition-duration: 600ms;">
+                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="3" style="width: 375px;">
+                                        <img src="assets/img/hero/skin/Aatrox/big266003.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 375px;">
+                                        <img src="assets/img/hero/skin/Aatrox/big266000.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide" data-swiper-slide-index="1" style="width: 375px;">
+                                        <img src="assets/img/hero/skin/Aatrox/big266001.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
+                                        <img src="assets/img/hero/skin/Aatrox/big266002.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="width: 375px;">
+                                        <img src="assets/img/hero/skin/Aatrox/big266003.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 375px;">
+                                        <img src="assets/img/hero/skin/Aatrox/big266000.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                    <span class="swiper-pagination-bullet"></span>
+                                    <span class="swiper-pagination-bullet"></span>
+                                    <span class="swiper-pagination-bullet"></span>
+                                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                                </div>
+                                <div class="hero-info">
+                                    <h6 class="hero-nickname">默认皮肤</h6>
+                                    <h3 class="hero-name">亚托克斯</h3>
+                                    <div class="hero-combat-type">
+                                        <span>战士</span>
+                                        <span>坦克</span>
+                                    </div>
+                                    <div class="hero-attr">
+                                        <div class="ad fiex">
+                                            <div class="name width-40">物理攻击</div>
+                                            <div class="centum width-55">
+                                                <i class="attack-8" style="background:#F2C500;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="ap fiex">
+                                            <div class="name width-40">魔法攻击</div>
+                                            <div class="centum width-55">
+                                                <i class="defense-4" style="background:#F59D00;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="defend fiex">
+                                            <div class="name width-40">防御能力</div>
+                                            <div class="centum width-55">
+                                                <i class="difficulty-4" style="background:#7e70f7;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="easy fiex">
+                                            <div class="name width-40">上手难度</div>
+                                            <div class="centum width-55">
+                                                <i class="magic-3" style="background:#1ECA6B"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hero-more">
+                                        <a href="/page/hero/defail/index.html?hero=Aatrox" class="">更多详情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-content">
+                            <ul class="hero-list">
+                                <li class="swipeout hero-Annie" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Annie.png">
+                                        <span>黑暗之女</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Olaf" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Olaf.png">
+                                        <span>狂战士</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Galio" data-type="Tank-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Galio.png">
+                                        <span>正义巨像</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-TwistedFate" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/TwistedFate.png">
+                                        <span>卡牌大师</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-XinZhao" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/XinZhao.png">
+                                        <span>德邦总管</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Urgot" data-type="Fighter-Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Urgot.png">
+                                        <span>无畏战车</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Leblanc" data-type="Assassin-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Leblanc.png">
+                                        <span>诡术妖姬</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Vladimir" data-type="Mage-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Vladimir.png">
+                                        <span>猩红收割者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Fiddlesticks" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Fiddlesticks.png">
+                                        <span>末日使者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Kayle" data-type="Fighter-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Kayle.png">
+                                        <span>审判天使</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-MasterYi" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/MasterYi.png">
+                                        <span>无极剑圣</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Alistar" data-type="Tank-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Alistar.png">
+                                        <span>牛头酋长</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Ryze" data-type="Mage-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Ryze.png">
+                                        <span>符文法师</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Sion" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Sion.png">
+                                        <span>亡灵战神</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Sivir" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Sivir.png">
+                                        <span>战争女神</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Soraka" data-type="Support-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Soraka.png">
+                                        <span>众星之子</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Teemo" data-type="Marksman-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Teemo.png">
+                                        <span>迅捷斥候</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Tristana" data-type="Marksman-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Tristana.png">
+                                        <span>麦林炮手</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Warwick" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Warwick.png">
+                                        <span>祖安怒兽</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Nunu" data-type="Support-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Nunu.png">
+                                        <span>雪人骑士</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-MissFortune" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/MissFortune.png">
+                                        <span>赏金猎人</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Ashe" data-type="Marksman-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Ashe.png">
+                                        <span>寒冰射手</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Tryndamere" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Tryndamere.png">
+                                        <span>蛮族之王</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Jax" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Jax.png">
+                                        <span>武器大师</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Morgana" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Morgana.png">
+                                        <span>堕落天使</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Zilean" data-type="Support-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Zilean.png">
+                                        <span>时光守护者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Singed" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Singed.png">
+                                        <span>炼金术士</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Evelynn" data-type="Assassin-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Evelynn.png">
+                                        <span>寡妇制造者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Twitch" data-type="Marksman-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Twitch.png">
+                                        <span>瘟疫之源</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Karthus" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Karthus.png">
+                                        <span>死亡颂唱者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Chogath" data-type="Tank-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Chogath.png">
+                                        <span>虚空恐惧</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Amumu" data-type="Tank-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Amumu.png">
+                                        <span>殇之木乃伊</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Rammus" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Rammus.png">
+                                        <span>披甲龙龟</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Anivia" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Anivia.png">
+                                        <span>冰晶凤凰</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Shaco" data-type="Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Shaco.png">
+                                        <span>恶魔小丑</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-DrMundo" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/DrMundo.png">
+                                        <span>祖安狂人</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Sona" data-type="Support-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Sona.png">
+                                        <span>琴瑟仙女</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Kassadin" data-type="Assassin-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Kassadin.png">
+                                        <span>虚空行者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Irelia" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Irelia.png">
+                                        <span>刀锋意志</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Janna" data-type="Support-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Janna.png">
+                                        <span>风暴之怒</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Gangplank" data-type="Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Gangplank.png">
+                                        <span>海洋之灾</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Corki" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Corki.png">
+                                        <span>英勇投弹手</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Karma" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Karma.png">
+                                        <span>天启者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Taric" data-type="Support-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Taric.png">
+                                        <span>瓦洛兰之盾</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Veigar" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Veigar.png">
+                                        <span>邪恶小法师</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Trundle" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Trundle.png">
+                                        <span>巨魔之王</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Swain" data-type="Mage-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Swain.png">
+                                        <span>策士统领</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Caitlyn" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Caitlyn.png">
+                                        <span>皮城女警</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Blitzcrank" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Blitzcrank.png">
+                                        <span>蒸汽机器人</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Malphite" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Malphite.png">
+                                        <span>熔岩巨兽</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Katarina" data-type="Assassin-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Katarina.png">
+                                        <span>不祥之刃</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Nocturne" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Nocturne.png">
+                                        <span>永恒梦魇</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Maokai" data-type="Tank-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Maokai.png">
+                                        <span>扭曲树精</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Renekton" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Renekton.png">
+                                        <span>荒漠屠夫</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-JarvanIV" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/JarvanIV.png">
+                                        <span>德玛西亚皇子</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Elise" data-type="Mage-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Elise.png">
+                                        <span>蜘蛛女皇</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Orianna" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Orianna.png">
+                                        <span>发条魔灵</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-MonkeyKing" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/MonkeyKing.png">
+                                        <span>齐天大圣</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Brand" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Brand.png">
+                                        <span>复仇焰魂</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-LeeSin" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/LeeSin.png">
+                                        <span>盲僧</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Vayne" data-type="Marksman-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Vayne.png">
+                                        <span>暗夜猎手</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Rumble" data-type="Fighter-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Rumble.png">
+                                        <span>机械公敌</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Cassiopeia" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Cassiopeia.png">
+                                        <span>魔蛇之拥</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Skarner" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Skarner.png">
+                                        <span>水晶先锋</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Heimerdinger" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Heimerdinger.png">
+                                        <span>大发明家</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Nasus" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Nasus.png">
+                                        <span>沙漠死神</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Nidalee" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Nidalee.png">
+                                        <span>狂野女猎手</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Udyr" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Udyr.png">
+                                        <span>兽灵行者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Poppy" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Poppy.png">
+                                        <span>圣锤之毅</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Gragas" data-type="Fighter-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Gragas.png">
+                                        <span>酒桶</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Pantheon" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Pantheon.png">
+                                        <span>战争之王</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Ezreal" data-type="Marksman-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Ezreal.png">
+                                        <span>探险家</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Mordekaiser" data-type="Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Mordekaiser.png">
+                                        <span>铁铠冥魂</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Yorick" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Yorick.png">
+                                        <span>牧魂人</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Akali" data-type="Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Akali.png">
+                                        <span>暗影之拳</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Kennen" data-type="Mage-Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Kennen.png">
+                                        <span>狂暴之心</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Garen" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Garen.png">
+                                        <span>德玛西亚之力</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Leona" data-type="Tank-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Leona.png">
+                                        <span>曙光女神</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Malzahar" data-type="Mage-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Malzahar.png">
+                                        <span>虚空先知</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Talon" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Talon.png">
+                                        <span>刀锋之影</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Riven" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Riven.png">
+                                        <span>放逐之刃</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-KogMaw" data-type="Marksman-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/KogMaw.png">
+                                        <span>深渊巨口</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Shen" data-type="Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Shen.png">
+                                        <span>暮光之眼</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Lux" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Lux.png">
+                                        <span>光辉女郎</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Xerath" data-type="Mage-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Xerath.png">
+                                        <span>远古巫灵</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Shyvana" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Shyvana.png">
+                                        <span>龙血武姬</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Ahri" data-type="Mage-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Ahri.png">
+                                        <span>九尾妖狐</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Graves" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Graves.png">
+                                        <span>法外狂徒</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Fizz" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Fizz.png">
+                                        <span>潮汐海灵</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Volibear" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Volibear.png">
+                                        <span>雷霆咆哮</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Rengar" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Rengar.png">
+                                        <span>傲之追猎者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Varus" data-type="Marksman-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Varus.png">
+                                        <span>惩戒之箭</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Nautilus" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Nautilus.png">
+                                        <span>深海泰坦</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Viktor" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Viktor.png">
+                                        <span>机械先驱</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Sejuani" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Sejuani.png">
+                                        <span>北地之怒</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Fiora" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Fiora.png">
+                                        <span>无双剑姬</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Ziggs" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Ziggs.png">
+                                        <span>爆破鬼才</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Lulu" data-type="Support-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Lulu.png">
+                                        <span>仙灵女巫</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Draven" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Draven.png">
+                                        <span>荣耀行刑官</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Hecarim" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Hecarim.png">
+                                        <span>战争之影</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Khazix" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Khazix.png">
+                                        <span>虚空掠夺者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Darius" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Darius.png">
+                                        <span>诺克萨斯之手</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Jayce" data-type="Fighter-Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Jayce.png">
+                                        <span>未来守护者</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Lissandra" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Lissandra.png">
+                                        <span>冰霜女巫</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Diana" data-type="Fighter-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Diana.png">
+                                        <span>皎月女神</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Quinn" data-type="Marksman-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Quinn.png">
+                                        <span>德玛西亚之翼</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Syndra" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Syndra.png">
+                                        <span>暗黑元首</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-AurelionSol" data-type="Mage-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/AurelionSol.png">
+                                        <span>铸星龙王</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Kayn" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Kayn.png">
+                                        <span>影流之镰</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Zyra" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Zyra.png">
+                                        <span>荆棘之兴</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Gnar" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Gnar.png">
+                                        <span>迷失之牙</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Zac" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Zac.png">
+                                        <span>生化魔人</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Yasuo" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Yasuo.png">
+                                        <span>疾风剑豪</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Velkoz" data-type="Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Velkoz.png">
+                                        <span>虚空之眼</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Taliyah" data-type="Mage-Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Taliyah.png">
+                                        <span>岩雀</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Camille" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Camille.png">
+                                        <span>青钢影</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Braum" data-type="Support-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Braum.png">
+                                        <span>弗雷尔卓德之心</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Jhin" data-type="Marksman-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Jhin.png">
+                                        <span>戏命师</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Kindred" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Kindred.png">
+                                        <span>永猎双子</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Jinx" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Jinx.png">
+                                        <span>暴走萝莉</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-TahmKench" data-type="Support-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/TahmKench.png">
+                                        <span>河流之王</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Lucian" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Lucian.png">
+                                        <span>圣枪游侠</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Zed" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Zed.png">
+                                        <span>影流之主</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Kled" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Kled.png">
+                                        <span>暴怒骑士</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Ekko" data-type="Assassin-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Ekko.png">
+                                        <span>时间刺客</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Vi" data-type="Fighter-Assassin">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Vi.png">
+                                        <span>皮城执法官</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Aatrox" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Aatrox.png">
+                                        <span>暗裔剑魔</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Nami" data-type="Support-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Nami.png">
+                                        <span>唤潮鲛姬</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Azir" data-type="Mage-Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Azir.png">
+                                        <span>沙漠皇帝</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Thresh" data-type="Support-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Thresh.png">
+                                        <span>魂锁典狱长</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Illaoi" data-type="Fighter-Tank">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Illaoi.png">
+                                        <span>海兽祭司</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-RekSai" data-type="Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/RekSai.png">
+                                        <span>虚空遁地兽</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Ivern" data-type="Support-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Ivern.png">
+                                        <span>翠神</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Kalista" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Kalista.png">
+                                        <span>复仇之矛</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Bard" data-type="Support-Mage">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Bard.png">
+                                        <span>星界游神</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Rakan" data-type="Support">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Rakan.png">
+                                        <span>幻翎</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Xayah" data-type="Marksman">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Xayah.png">
+                                        <span>逆羽</span>
+                                    </a>
+                                </li>
+                                <li class="swipeout hero-Ornn" data-type="Tank-Fighter">
+                                    <a herf="">
+                                        <img src="assets/img/hero/photo/Ornn.png">
+                                        <span>山隐之焰</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page-template">
+                        <script type="text/template" id="temp-swiper">
+                <div class="swiper-{0}">
+                    <div class="swiper-wrapper">{1}</div>
+                    <div class="swiper-pagination"></div>
+                    <div class="hero-info">
+                        <h6 class="hero-nickname">{2}</h6>
+                        <h3 class="hero-name">{3}</h3>
+                        <div class="hero-combat-type">
+                            {4}
+                        </div>
+                        <div class="hero-attr">
+                            <div class="ad fiex">
+                                <div class="name width-40">物理攻击</div>
+                                <div class="centum width-55">
+                                    <i class="attack-{5}" style="background:#F2C500;"></i>
+                                </div>
+                            </div>
+                            <div class="ap fiex">
+                                <div class="name width-40">魔法攻击</div>
+                                <div class="centum width-55">
+                                    <i class="defense-{6}" style="background:#F59D00;"></i>
+                                </div>
+                            </div>
+                            <div class="defend fiex">
+                                <div class="name width-40">防御能力</div>
+                                <div class="centum width-55">
+                                    <i class="difficulty-{7}" style="background:#7e70f7;"></i>
+                                </div>
+                            </div>
+                            <div class="easy fiex">
+                                <div class="name width-40">上手难度</div>
+                                <div class="centum width-55">
+                                    <i class="magic-{8}" style="background:#1ECA6B"></i>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="hero-more">
+                                <a href="/page/hero/defail/index.html?hero={9}">更多详情</a>
+                        </div>
+                    </div>
+                </div>
+            </script>
+
+                        <script type="text/template" id="temp-skin">
+                <div class="swiper-slide">
+                    <img src="{0}" alt="">
+                </div>
+            </script>
+
+                        <script type="text/template" id="temp-hero">
+                <li class="swipeout hero-{0}" data-type="{1}">
+                    <a herf="{2}"><img src="{3}"> <span>{4}</span></a>
+                </li>
+            </script>
+                    </div>
+                </div>
+                <div class="page page-defail page-on-center" data-page="defail" id="page-defail">
+                    <div class="page-content">
+                        <div class="panel-video" style="         height: 161px; ">
+                            <video class="video-js vjs-default-skin" controls="" perboad="auto" id="hero-video" style="height:100%;width:100%;">
+                                <source src="/assets/video/oceans.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="skill">
+
+                            <div class="skill-icon" style="width:100%;display:flex;/* background: #476f98; */">
+                                <div class="skill-passive" style="width: 18%;background: rgb(10, 11, 21);">
+                                    <img src="/assets/img/hero/defail/Aatrox/Aatrox_Passive.png" alt="" class="">
+                                    <span class="skill-name" style="        color: #fff;    ">鲜血魔井</span>
+                                </div>
+                                <div class="skill-q" style="width: 18%;/* text-align: center; */">
+                                    <img src="/assets/img/hero/defail/Aatrox/AatroxQ.png" alt="" class="">
+                                </div>
+                                <div class="skill-w" style="width: 18%;/* text-align: center; */">
+                                    <img src="/assets/img/hero/defail/Aatrox/AatroxW.png" alt="" class="">
+                                </div>
+                                <div class="skill-e" style="width: 18%;/* text-align: center; */">
+                                    <img src="/assets/img/hero/defail/Aatrox/AatroxE.png" alt="" class="">
+                                </div>
+                                <div class="skill-r" style="width: 18%;/* text-align: center; */">
+                                    <img src="/assets/img/hero/defail/Aatrox/AatroxR.png" alt="" class="">
+                                </div>
+                            </div>
+
+                            <div class="skill-data" style="padding: 0 0.6em;background: rgb(25, 21, 24);color: #fff;">
+                                <div class="skill-title" style="
+        font-size: 10px;
+        color: #cea9b5;
+        ">被动技能</div>
+                                <div class="skill-info" style="
+        font-weight: 200;
+        line-height: 24px;
+    ">亚托克斯可通过技能来浇灌鲜血魔井。当鲜血魔井被灌满时，亚托克斯会获得持续血涌效果，这个效果可通过与英雄或野怪作战来一直保持，并会为亚托克斯提供攻击力、攻击速度和在承受致命伤害后的复活能力。</div>
+                            </div>
+                        </div>
+                        <div class="equip">
+                            <div class="buttons-row">
+                                <a href="#tab-home" class="button active tab-link">召唤师峡谷</a>
+                                <a href="#tab-away" class="button tab-link">极低大乱斗</a>
+                            </div>
+                            <div class="tabs-swipeable-wrap">
+                                <div class="tabs">
+                                    <div id="tab-home" class="tab active">
+                                        <div class="equip-type" style="        background: #fff1f1;        box-shadow: 24px -21px 10px -24px rgba(0, 0, 0, 0.72) inset;    ">
+                                            <p class="name" style="        margin: 0;        color: #171313;    ">起始装备</p>
+                                            <ul class="equip-info" style="        margin: 0;        padding: 0;    ">
+                                                <li>
+                                                    <img src="/assets/img/equip/1055.png">
+                                                    <img src="/assets/img/equip/2003.png">
+                                                    <img src="/assets/img/equip/3340.png">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="equip-type" style="background: #fff1f1;box-shadow: -18px -21px 10px -24px rgba(0, 0, 0, 0.72) inset;">
+                                            <p class="name" style="
+        margin: 0;
+        color: #171313;
+    ">核心装备</p>
+                                            <ul class="equip-info" style="
+        margin: 0;
+        padding: 0;
+    ">
+                                                <li>
+                                                    <img src="/assets/img/equip/3047.png">
+                                                    <img src="/assets/img/equip/3153.png">
+                                                    <img src="/assets/img/equip/3812.png">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="equip-type" style="
+        /* background: #fff1f1; */
+        /* box-shadow: 0px -20px 76px -19px rgba(0, 0, 0, 0.72) inset; */
+        background: #fff1f1;
+        box-shadow: -18px -21px 10px -24px rgba(0, 0, 0, 0.72) inset;
+    ">
+                                            <p class="name" style="
+        margin: 0;
+        color: #171313;
+    ">进攻型装备</p>
+                                            <ul class="equip-info" style="
+        margin: 0;
+        padding: 0;
+    ">
+                                                <li>
+                                                    <img src="/assets/img/equip/3078.png">
+                                                    <img src="/assets/img/equip/3074.png">
+                                                    <img src="/assets/img/equip/3071.png">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="equip-type" style="
+        /* background: #fff1f1; */
+        /* box-shadow: 0px -20px 76px -19px rgba(25, 18, 18, 0.72) inset; */
+        background: #fff1f1;
+        box-shadow: -18px -21px 8px -24px rgba(0, 0, 0, 0.72) inset;
+    ">
+                                            <p class="name" style="
+        margin: 0;
+        color: #171313;
+    ">防御性装备</p>
+                                            <ul class="equip-info" style="
+        margin: 0;
+        padding: 0;
+    ">
+                                                <li>
+                                                    <img src="/assets/img/equip/3143.png">
+                                                    <img src="/assets/img/equip/3156.png">
+                                                    <img src="/assets/img/equip/3065.png">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="view tab view-defail" id="view-defail">
+            <div class="navbar"></div>
+            <div class="pages navbar-through toolbar-through"> </div>
+
+            <div class="toolbar tabbar tabbar-labels" id="toolbar-hero">
+                <div class="toolbar-inner">
+                    <a href="home.html" class="tab-link active">
+                        <i class="f7-icons">bars</i>
+                        <span class="tabbar-label">英雄</span>
+                    </a>
+                    <a href="#tab2" class="tab-link">
+                        <i class="f7-icons">tape</i>
+                        <span class="tabbar-label">物品</span>
+                    </a>
+                    <a href="#tab3" class="tab-link">
+                        <i class="f7-icons">data</i>
+                        <span class="tabbar-label">召唤师技能</span>
+                    </a>
+                    <a href="#tab4" class="tab-link">
+                        <i class="f7-icons">flag</i>
+                        <span class="tabbar-label">符文</span>
+                    </a>
+                    <a href="#tab5" class="tab-link">
+                        <i class="f7-icons">settings</i>
+                        <span class="tabbar-label">天赋</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/framework7.js"></script>
+    <script src="assets/js/video.min.js"></script>
+    <script src="assets/js/videojs-ie8.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.main.js"></script>
+    <script src="assets/js/polyfill.js"></script>
+    <script src="assets/js/hero/params.js"></script>
+    <script src="assets/js/hero/index.js"></script>
+    <script src="assets/js/hero/defail/index.js"></script>
+
+</body>
